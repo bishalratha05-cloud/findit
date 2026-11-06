@@ -1,0 +1,1 @@
+Web search mining studies the discovery of useful information from web data. Search engines crawl web pages, build indexes, process user queries, and rank results. Information retrieval, data mining, machine learning, and web analytics are important parts of web search mining.

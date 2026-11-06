@@ -1,0 +1,1 @@
+Artificial intelligence is a branch of computer science focused on building systems that perform tasks requiring human intelligence. Common applications include machine learning, natural language processing, computer vision, robotics, and expert systems. Machine learning systems learn patterns from data and use those patterns to make predictions or decisions.

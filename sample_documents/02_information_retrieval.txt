@@ -1,0 +1,1 @@
+Information retrieval is the process of obtaining relevant information from a collection of resources in response to a user query. Search engines use indexing, query processing, ranking, and evaluation. A document collection is processed into searchable representations. Ranking algorithms such as TF-IDF and BM25 estimate the relevance of documents to a query.

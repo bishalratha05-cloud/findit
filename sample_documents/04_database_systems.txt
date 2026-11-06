@@ -1,0 +1,1 @@
+A database management system stores, organizes, retrieves, and manages data. Relational databases use tables, rows, keys, and SQL queries. SQLite is a lightweight database engine that stores information in a local file and is useful for small applications and student projects.

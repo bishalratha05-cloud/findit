@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block title %}Upload documents — FindIt{% endblock %}{% block content %}
+<div class="page-heading"><div class="eyebrow">DOCUMENT LIBRARY</div><h1>Upload documents</h1><p>Add files to your searchable collection.</p></div>
+<form class="upload-box" method="post" enctype="multipart/form-data"><div class="upload-icon">↑</div><h2>Choose documents to upload</h2><p>Supported formats: TXT, PDF, DOCX · Max 12 MB per request</p><input type="file" name="files" multiple accept=".txt,.pdf,.docx" required><button class="primary">Upload files</button></form>
+<h2 class="section-title">Indexed documents <span class="pill">{{ documents|length }} total</span></h2><div class="doc-list">{% for doc in documents %}<div class="doc-row"><span class="filetype">DOC</span><div><b>{{ doc.title }}</b><small>{{ doc.filename }}</small></div><span class="status">Indexed</span></div>{% else %}<p>No documents yet.</p>{% endfor %}</div>{% endblock %}

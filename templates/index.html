@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block title %}FindIt — Information Retrieval{% endblock %}
+{% block content %}
+<section class="hero"><div class="eyebrow">INFORMATION RETRIEVAL SYSTEM</div><h1>Find the information<br><span>that matters.</span></h1><p>Search across your documents with a simple BM25-powered retrieval engine.</p>
+<form class="searchbar" method="post"><input name="query" value="{{ query }}" placeholder="Search documents, topics, keywords..." autofocus required><button>Search <b>→</b></button></form>
+<div class="quick"><span>Try:</span><a href="?">information retrieval</a><a href="?">artificial intelligence</a><a href="?">python programming</a></div></section>
+{% if stats %}<div class="results-head"><div><div class="eyebrow">SEARCH RESULTS</div><h2>Results for “{{ query }}”</h2></div><span class="pill">{{ stats.results }} found · {{ stats.documents }} documents indexed</span></div>
+{% if results %}<div class="results">{% for item in results %}<article class="result"><div class="result-meta"><span class="filetype">DOC</span><span>{{ item.filename }}</span><span class="score">Score {{ item.score }}</span></div><h3>{{ item.title }}</h3><p>{{ item.snippet }}</p></article>{% endfor %}</div>{% else %}<div class="empty"><div class="empty-icon">⌕</div><h3>No matching documents</h3><p>Try different keywords or upload more documents.</p></div>{% endif %}{% endif %}
+{% endblock %}

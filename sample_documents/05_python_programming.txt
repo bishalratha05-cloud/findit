@@ -1,0 +1,1 @@
+Python is a high-level programming language known for readable syntax and a large ecosystem of libraries. Python is used in web development, automation, data science, artificial intelligence, and information retrieval. Flask is a lightweight Python web framework for building web applications.
